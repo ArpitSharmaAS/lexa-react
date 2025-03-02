@@ -142,7 +142,7 @@ const TypingContainer = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className={`p-3 rounded-xl bg-gray-800 bg-opacity-50 backdrop-blur-lg border border-gray-700 text-gray-300 hover:bg-gray-700 transition-all duration-300 ${
+            className={`mic-btn p-3 rounded-xl bg-gray-800 bg-opacity-50 backdrop-blur-lg border border-gray-700 text-gray-300 hover:bg-gray-700 transition-all duration-300 ${
               isListening ? 'bg-red-500 text-white' : ''
             }`}
             onClick={handleVoiceInput}
@@ -154,7 +154,7 @@ const TypingContainer = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={toggleTheme}
-            className="p-3 text-gray-300 transition-all duration-300 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-xl backdrop-blur-lg hover:bg-gray-700"
+            className="p-3 text-gray-300 transition-all duration-300 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-xl backdrop-blur-lg hover:bg-gray-700 mic-theme"
           >
             {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
           </motion.button>
@@ -162,7 +162,7 @@ const TypingContainer = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="p-3 text-gray-300 transition-all duration-300 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-xl backdrop-blur-lg hover:bg-red-500 hover:text-white"
+            className="p-3 text-gray-300 transition-all duration-300 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-xl backdrop-blur-lg hover:bg-red-500 hover:text-white mic-delete"
             onClick={clearChat}
           >
             <Trash2 size={20} />

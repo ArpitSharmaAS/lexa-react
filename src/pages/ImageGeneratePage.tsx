@@ -242,10 +242,10 @@ const ImageGeneratePage = () => {
   const handleDownload = (imageUrl: string) => {
     const link = document.createElement('a');
     link.href = imageUrl;
-    link.download = `generated-image-${Date.now()}.png`;
+    link.download = `lexa-generated-image-${Date.now()}.png`;
     document.body.appendChild(link);
     link.click();
-    document.body.removeChild(link);
+    document.body.removeChild(link)
   };
 
   const handleCopyPrompt = (text: string) => {
