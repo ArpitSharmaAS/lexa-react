@@ -837,7 +837,7 @@ body.light-mode {
   .typing-controls {
     display: flex;
     justify-content: space-between !important;
-    margin-top: -15px;
+    margin-top: -10px;
     margin-left: auto;
     margin-right: auto;  
     width: 100%;
