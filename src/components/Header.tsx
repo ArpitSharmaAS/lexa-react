@@ -18,7 +18,7 @@ const Header = () => {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="menu-icon p-2 rounded-xl bg-opacity-20 bg-white"
+          className="p-2 bg-white menu-icon rounded-xl bg-opacity-20"
           onClick={toggleMenu}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -30,9 +30,9 @@ const Header = () => {
             className="relative"
           >
             <Brain className="w-8 h-8 text-indigo-500" />
-            <div className="absolute inset-0 bg-indigo-500 blur-lg opacity-40 group-hover:opacity-60 transition-opacity" />
+            <div className="absolute inset-0 transition-opacity bg-indigo-500 blur-lg opacity-40 group-hover:opacity-60" />
           </motion.div>
-          <span className="logo-text text-xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+          <span className="text-xl font-bold text-transparent logo-text bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text">
             Lexa AI
           </span>
         </Link>
@@ -41,9 +41,9 @@ const Header = () => {
       <motion.button
         whileHover={{ scale: 1.05, y: -2 }}
         whileTap={{ scale: 0.95 }}
-        className="get-pro-btn group overflow-hidden relative"
+        className="relative overflow-hidden get-pro-btn group"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:opacity-90 transition-opacity" />
+        <div className="absolute transition-opacity inset-10 bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:opacity-90" />
         <Crown className="w-5 h-5" />
         <span className="relative z-10">Get Pro</span>
       </motion.button>
@@ -53,7 +53,7 @@ const Header = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="p-2 rounded-xl bg-opacity-20 bg-white"
+            className="p-2 bg-white rounded-xl bg-opacity-20"
           >
             <Image className="w-6 h-6 text-indigo-500" />
           </motion.button>
