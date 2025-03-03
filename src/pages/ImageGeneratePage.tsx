@@ -196,7 +196,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Image, Download, Copy, Sparkles, RefreshCw } from 'lucide-react';
+import {  Download, Copy, Sparkles, RefreshCw } from 'lucide-react';
 
 const ImageGeneratePage = () => {
   const [prompt, setPrompt] = useState('');
@@ -275,7 +275,7 @@ const ImageGeneratePage = () => {
 
     setTimeout(() => {
       alertContainer.remove();
-    }, 3000);
+    }, 6000);
   };
 
   // Cleanup blob URLs to prevent memory leaks
